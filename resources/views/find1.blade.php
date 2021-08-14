@@ -11,27 +11,54 @@
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト</p>
-        <a class="js-modal-close" href="">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>テキストテキストテキストテキスト</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban_daigo.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
 <div class="yes-modal modal2">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト2</p>
-        <a class="js-modal-close" href="">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>テキストテキストテキストテキスト</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban_daigo.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
 <div class="yes-modal modal3">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト3</p>
-        <a class="js-modal-close" href="">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>テキストテキストテキストテキスト</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban_daigo.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 @endsection
@@ -75,24 +102,6 @@
         position: fixed;
         top: 0;
         width: 100%;
-    }
-
-    .modal__bg {
-        background: rgba(255, 255, 255, 0.8);
-        height: 100vh;
-        position: absolute;
-        width: 100%;
-    }
-
-    .modal__content {
-        width: 90%;
-        height: 70%;
-        background: #fff;
-        top: 50%;
-        left: 50%;
-        padding: 40px;
-        position: absolute;
-        transform: translate(-50%, -50%);
     }
 </style>
 
