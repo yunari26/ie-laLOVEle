@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <META http-equiv="Refresh" content="29;URL=/select">
 
         <title>Laravel</title>
 
@@ -15,6 +16,12 @@
         <style>
             h1, h2, p, div{
                 color: #eee;
+            }
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 0;
+            }
+            p, div {
                 line-height: 2;
             }
             .intro-wrapper {
@@ -34,17 +41,24 @@
                 left: 0;
                 right: 0;
                 opacity: 0;
-                -webkit-animation: change 14s linear 10s;
-                animation: change 14s linear 10s;
             }
             .intro-first {
+                -webkit-animation: change 12s linear 10s;
+                animation: change 11s linear 10s;
                 animation-delay: 1s;
             }
             .intro-second {
+                -webkit-animation: change 14s linear 10s;
+                animation: change 22s linear 10s;
                 animation-delay: 7s;
             }
             .intro-third {
-                animation-delay: 13s;
+                -webkit-animation: change 14s linear 10s;
+                animation: change 22s linear 10s;
+                animation-delay: 18s;
+            }
+            .intro-third p {
+                line-height: 3;
             }
 
             @-webkit-keyframes change { 
