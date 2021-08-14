@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh"content="15;URL={{ url('/foutmen') }}">
+
+    <meta http-equiv="refresh"content="15;URL={{ url('/member') }}">
+
     <title>Document</title>
 
     <!-- Fonts -->
@@ -38,7 +40,7 @@
         animation: change 14s linear 10s;
     }
     .intro-text {
-        font-size: 30px;
+        font-size: 20px;
     }
     .intro-first {
         animation-delay: 1s;
@@ -49,7 +51,8 @@
     .intro-third {
         animation-delay: 13s;
     }
-    @-webkit-keyframes change { 
+
+    @-webkit-keyframes change {
         0% {
             -webkit-animation-timing-function: ease-in;
             opacity: 0;
@@ -69,7 +72,8 @@
         }
         100% { opacity: 0 }
     }
-    @keyframes change { 
+
+    @keyframes change {
         0% {
             animation-timing-function: ease-in;
             opacity: 0;
