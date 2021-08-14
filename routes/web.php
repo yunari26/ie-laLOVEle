@@ -21,3 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/select', 'HomeController@select')->name('select');
 Route::get('/find', 'HomeController@find')->name('find');
+
+Route::get('/yes', 'HomeController@yes')->name('yes');
+Route::get('/false', 'HomeController@false')->name('false');
