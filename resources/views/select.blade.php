@@ -5,10 +5,10 @@
         <img src="images\omenya.png" class="image" id="image1">
     </a>
     <a href="{{ url('/find?shop=2') }}">
-        <img src="images\omenya.png" class="image" id="image2">
+        <img src="images\wanage.png" class="image" id="image2">
     </a>
     <a href="{{ url('/find?shop=3') }}">
-        <img src="images\wanage.png" class="image" id="image3">
+        <img src="images\sukui.png" class="image" id="image3">
     </a>
 </div>
 <style>
