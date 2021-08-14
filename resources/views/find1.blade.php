@@ -1,6 +1,8 @@
+<link href="css/welcome.css" rel="stylesheet" type="text/css">
+
 @extends('layouts.app')
 @section('content')
-<div>
+<div class="center mgn_top200">
     <img class="image" src="images\omenya.png">
     <a href="javascript:void(0)" class="yes1"></a>
     <a href="javascript:void(0)" class="yes2"></a>
@@ -83,13 +85,14 @@
     }
 
     .modal__content {
+        width: 90%;
+        height: 70%;
         background: #fff;
+        top: 50%;
         left: 50%;
         padding: 40px;
         position: absolute;
-        top: 50%;
         transform: translate(-50%, -50%);
-        width: 60%;
     }
 </style>
 
