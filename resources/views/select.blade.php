@@ -1,7 +1,55 @@
 @extends('layouts.app')
 @section('content')
-ここにお店3つ出すよ
-<a href='/find/?shop=1'>店１</a>
-<a href='/find/?shop=2'>店２</a>
-<a href='/find/?shop=3'>店３</a>
+<div id="images">
+    <a href="{{ url('/find') }}">
+        <img src="images\omenya.png" class="image" id="image1">
+    </a>
+    <a href="{{ url('/pickOmen') }}">
+        <img src="images\omenya.png" class="image" id="image2">
+    </a>
+    <a href="{{ url('/pickVirus') }}">
+        <img src="images\wanage.png" class="image" id="image3">
+    </a>
+</div>
+<style>
+    #image1, #image2, #image3 {
+        transition: all 1500ms 0s ease;
+    }
+    .on {
+      transform: scale(2.0, 2.0) translate(80px, 80px);
+    }
+    .off {
+      transform: scale(1.0, 1.0) translate(0px, 0px);
+      opacity: 1;
+    }
+    .fadeout {
+        animation: fadein-keyframes 2s ease 0.2s 1 forwards;
+    }
+    
+    @keyframes fadein-keyframes {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+<script>
+    const image = document.getElementsByClassName('image');
+    let stat = false;
+    console.log(image);
+    for (var i = image.length-1; i >= 0; i--) {
+        // 各ボタンをイベントリスナーに登録
+　　    image[i].addEventListener("click", function(){
+　　　  // fadeoutクラスの追加と削除
+　　　  // thisは、クリックされたオブジェクト
+　　　  this.classList.add('fadeout');
+        this.classList.add('on');
+        document.getElementById('images').classList.add('fadeout');
+　　});
+    }
+</script>
+
 @endsection
