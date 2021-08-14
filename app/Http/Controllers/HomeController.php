@@ -52,4 +52,28 @@ class HomeController extends Controller
     {
         return view('false');
     }
+
+/**
+     * エンディング
+     */
+    public function ending()
+    {
+        return view('ending');
+    }
+
+/**
+     * エンディング
+     */
+    public function member()
+    {
+        return view('member');
+    }
+
+/**
+     * エンディング
+     */
+    public function thanks()
+    {
+        return view('thanks');
+    }
 }

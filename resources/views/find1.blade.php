@@ -61,6 +61,27 @@
         </div>
     </div>
 </div>
+
+{{--摘発失敗--}}
+<div class="no-modal modal3">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発失敗。。。︎</h2>
+                <p>YTYであることがバレてしまった、、、<br><br>
+
+                    もう一度挑戦しよう！！</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/shitauchi.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="">再挑戦する!!</a>
+        </div>
+    </div>
+</div>
 @endsection
 <style>
     .image {

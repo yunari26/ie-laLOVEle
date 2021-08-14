@@ -21,5 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/select', 'HomeController@select')->name('select');
 Route::get('/find', 'HomeController@find')->name('find');
 
+Route::get('/ending', 'HomeController@ending')->name('ending');
+Route::get('/member', 'HomeController@member')->name('member');
+Route::get('/thanks', 'HomeController@thanks')->name('thanks');
+
 Route::get('/yes', 'HomeController@yes')->name('yes');
 Route::get('/false', 'HomeController@false')->name('false');
