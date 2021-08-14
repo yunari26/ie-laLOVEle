@@ -54,12 +54,15 @@
     img {
         width: 500px;
     }
+    #image1 {
+        width: 400px;
+    }
     .center {
         text-align: center;
     }
     .up {
         width: 100%;
-        margin-top: 200px;
+        margin-top: 150px;
     }
     .left {
         margin-left: 100px;

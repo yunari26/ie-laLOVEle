@@ -38,7 +38,7 @@
         animation: change 14s linear 10s;
     }
     .intro-text {
-        font-size: 30px;
+        font-size: 20px;
     }
     .intro-first {
         animation-delay: 1s;

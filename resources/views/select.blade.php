@@ -22,6 +22,12 @@
     </div>
 </div>
 <style>
+    img {
+        width: 500px;
+    }
+    #image1 {
+        width: 400px;
+    }
     #image1,
     #image2,
     #image3 {

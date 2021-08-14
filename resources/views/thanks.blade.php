@@ -46,12 +46,12 @@
         align-items: center;
     }
     div.message p {
-        font-size: 40px;
+        font-size: 30px;
         opacity: 0;
     }
     div.message h2 {
         color: red;
-        font-size: 60px;
+        font-size: 50px;
         opacity: 0;
     }
     .fadeup.first-content {
