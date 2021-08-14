@@ -29,8 +29,27 @@ class HomeController extends Controller
     /**
      * 屋台で間違いを探す
      */
-    public function find()
+    public function find(Request $request)
     {
-        return view('find');
+        $shopNum = $request->shop;
+        return view('find' . $shopNum);
+    }
+
+    /**
+     * 正解
+     *  一応コントローラ通すけど要らなかったらviewだけでおけ
+     */
+    public function yes()
+    {
+        return view('yes');
+    }
+
+    /**
+     * 間違い
+     * 一応コントローラ通すけど要らなかったらviewだけでおけ
+     */
+    public function false()
+    {
+        return view('false');
     }
 }
