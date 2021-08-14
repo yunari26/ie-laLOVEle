@@ -1,17 +1,66 @@
 @extends('layouts.app')
 @section('content')
-<div id="images">
-    <a href="{{ url('/find?shop=1') }}">
-        <img src="images\omenya.png" class="image" id="image1">
-    </a>
-    <a href="{{ url('/find?shop=2') }}">
-        <img src="images\wanage.png" class="image" id="image2">
-    </a>
-    <a href="{{ url('/find?shop=3') }}">
-        <img src="images\sukui.png" class="image" id="image3">
-    </a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="images">
+        <div class="up">
+            <div class="center">
+                <a href="{{ url('/find?shop=1') }}">
+                    <img src="images\omenya.png" class="image" id="image1">
+                </a>
+            </div>
+        </div>
+        <div class="down">
+            <div>
+                <a href="{{ url('/find?shop=2') }}">
+                    <img src="images\wanage.png" class="image" id="image2">
+                </a>
+            </div>
+            <div>
+                <a href="{{ url('/find?shop=3') }}">
+                    <img src="images\sukui.png" class="image" id="image3">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
 <style>
+    body {
+        background-image: url(https://t4.ftcdn.net/jpg/02/76/07/57/360_F_276075762_iSnIlN6H6qhaoLJ59jMKLTEEtpqZ19la.jpg);
+        background-size: cover;
+    }
+
+    img {
+        width: 500px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .up {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    .down {
+        margin-top: 50px;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+    }
+
     #image1,
     #image2,
     #image3 {
