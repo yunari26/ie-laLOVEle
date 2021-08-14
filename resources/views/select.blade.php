@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div id="images">
     <div class="up">
         <div class="center">
@@ -28,6 +29,7 @@
     #image1 {
         width: 400px;
     }
+
     #image1,
     #image2,
     #image3 {

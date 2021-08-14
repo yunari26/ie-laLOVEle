@@ -4,9 +4,12 @@
 @section('content')
 <div class="center mgn_top200">
     <img class="image" src="images\omenya.png">
-    <a href="javascript:void(0)" class="yes1"></a>
-    <a href="javascript:void(0)" class="yes2"></a>
-    <a href="javascript:void(0)" class="yes3"></a>
+    <a href="javascript:void(0)" class="yes1 yes"></a>
+    <img class="yes1" src="images\mark_maru.png" style="display:none;">
+    <a href="javascript:void(0)" class="yes2 yes"></a>
+    <img class="yes2" src="images\mark_maru.png" style="display:none;">
+    <a href="javascript:void(0)" class="yes3 yes"></a>
+    <img class="yes3" src="images\mark_maru.png" style="display:none;">
 </div>
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
@@ -116,8 +119,8 @@
         display: inline-block;
         width: 250px;
         height: 100px;
-        top: 220px;
-        left: 50px;
+        top: 400px;
+        left: 700px;
 
     }
 
@@ -126,8 +129,8 @@
         display: inline-block;
         width: 100px;
         height: 50px;
-        top: 120px;
-        left: 70px;
+        top: 320px;
+        left: 750px;
     }
 
     .yes3 {
@@ -135,8 +138,8 @@
         display: inline-block;
         width: 100px;
         height: 100px;
-        top: 230px;
-        left: 400px;
+        top: 450px;
+        right: 700px;
 
     }
 
@@ -151,17 +154,34 @@
 
 <script type="module">
     $(function() {
-        $('.yes1').on('click', function() {
+        $('a.yes1').on('click', function() {
+            $(this).remove();
             $('.modal1').fadeIn();
+            $('img.yes1').show();
             return false;
         });
-        $('.yes2').on('click', function() {
+        $('a.yes2').on('click', function() {
+            $(this).remove();
             $('.modal2').fadeIn();
+            $('img.yes2').show();
             return false;
         });
-        $('.yes3').on('click', function() {
+        $('a.yes3').on('click', function() {
+            $(this).remove();
             $('.modal3').fadeIn();
+            $('img.yes3').show();
             return false;
         });
+
+        var modalCnt = 0;
+        $('.js-modal-close-yes').on('click', function() {
+            $('.yes-modal').fadeOut();
+            modalCnt++;
+            if (modalCnt === 3) {
+                $('.success').fadeIn();
+                return false;
+            }
+            return false;
+        })
     });
 </script>
