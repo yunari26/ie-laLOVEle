@@ -1,15 +1,24 @@
-h1, h2, p, div{
+h1,
+h2,
+p,
+div {
     color: #eee;
 }
+
 .title {
-    font-family: "MS Pゴシック" ;
+    font-family: "MS Pゴシック";
 }
+
 .mgn0 {
     margin: 0 auto;
 }
 
 .mgn_top200 {
     margin-top: 200px;
+}
+
+.mgn_top100 {
+    margin-top: 100px;
 }
 
 .center {
