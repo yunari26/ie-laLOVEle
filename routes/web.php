@@ -23,3 +23,7 @@ Route::get('/find', 'HomeController@find')->name('find');
 
 Route::get('/yes', 'HomeController@yes')->name('yes');
 Route::get('/false', 'HomeController@false')->name('false');
+
+Route::get('/ending', function () {
+    return view('ending');
+});
