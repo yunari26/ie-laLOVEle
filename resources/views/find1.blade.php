@@ -10,6 +10,7 @@
     <img class="yes2" src="images\mark_maru.png" style="display:none;">
     <a href="javascript:void(0)" class="yes3 yes"></a>
     <img class="yes3" src="images\mark_maru.png" style="display:none;">
+    <a href="javascript:void(0)" class="no1 no"></a>
 </div>
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
@@ -17,10 +18,12 @@
         <div class="modal-inner">
             <div class="modal-text">
                 <h2>摘発‼︎</h2>
-                <p>テキストテキストテキストテキスト</p>
+                <p>密です!!!<br>
+                    こんなご時世なのに密・密・密!!!<br>
+                    これには小池都知事もご立腹でしょう。</p>
             </div>
             <div class="modal-image">
-                <img src="images/.png">
+                <img src="images/ban-mitsu.png">
             </div>
         </div>
         <div class="right">
@@ -34,11 +37,13 @@
     <div class="modal__content">
         <div class="modal-inner">
             <div class="modal-text">
-                <h2>摘発‼︎</h2>
-                <p>テキストテキストテキストテキスト</p>
+                <h2>摘発‼</h2>
+                <p>お面に店主が自作した?パチモンが含まれている!!<br>
+                    これは、、、かの有名な○ラえもん、、??<br>
+                    逆にいい味を出しているとも言えますね。</p>
             </div>
             <div class="modal-image">
-                <img src="images/.png">
+                <img src="images/ban-pachi.png">
             </div>
         </div>
         <div class="right">
@@ -53,10 +58,12 @@
         <div class="modal-inner">
             <div class="modal-text">
                 <h2>摘発‼︎</h2>
-                <p>テキストテキストテキストテキスト</p>
+                <p>あらあらズラを被っていますね。<br>
+                    一人だけかっこつけようだなんて許せません!!<br>
+                    摘発!!!!</p>
             </div>
             <div class="modal-image">
-                <img src="images/ban_daigo.png">
+                <img src="images/ban-katsura.png">
             </div>
         </div>
         <div class="right">
@@ -67,25 +74,24 @@
 
 
 {{--摘発失敗--}}
-{{--<div class="no-modal modal3">--}}
-{{-- <div class="modal__bg js-modal-close"></div>--}}
-{{-- <div class="modal__content">--}}
-{{-- <div class="modal-inner">--}}
-{{-- <div class="modal-text">--}}
-{{-- <h2>摘発失敗。。。︎</h2>--}}
-{{-- <p>YTYであることがバレてしまった、、、<br><br>--}}
-
-{{-- もう一度挑戦しよう！！</p>--}}
-{{-- </div>--}}
-{{-- <div class="modal-image">--}}
-{{-- <img src="images/shitauchi.png">--}}
-{{-- </div>--}}
-{{-- </div>--}}
-{{-- <div class="right">--}}
-{{-- <a class="js-modal-close btn" href="">再挑戦する!!</a>--}}
-{{-- </div>--}}
-{{-- </div>--}}
-{{--</div>--}}
+<div class="no-modal modal4">
+ <div class="modal__bg js-modal-close"></div>
+ <div class="modal__content">
+ <div class="modal-inner">
+ <div class="modal-text">
+ <h2>摘発失敗。。。︎</h2>
+ <p>YTYであることがバレてしまった、、、<br><br>
+ もう一度挑戦しよう！！</p>
+ </div>
+ <div class="modal-image">
+ <img src="images/shitauchi.png">
+ </div>
+ </div>
+ <div class="right">
+ <a class="js-modal-close btn" href="{{ url('/') }}">再挑戦する!!</a>
+ </div>
+ </div>
+</div>
 
 {{-- 摘発成功--}}
 <div class="yes-modal success">
@@ -93,22 +99,18 @@
     <div class="modal__content">
         <div class="modal-inner">
             <div class="modal-text">
-                <h2>︎</h2>
-                <h2>Congratulations!!︎</h2>
-                <h2>摘発成功!!︎</h2>
-                <h2>by YTY</h2>
+                <h2 class="congratus next-content">Congratulations!!︎</h2>
+                <h2 class="success">摘発成功!!︎</h2>
             </div>
             <div class="modal-image">
                 <img src="images/toriosae.png">
             </div>
         </div>
         <div class="right">
-            <a class="js-modal-close btn" href="{{ url('/select?page=1') }}">再挑戦する!!</a>
+            <a class="js-modal-close btn" href="{{ url('/select?page=1') }}">次の屋台へ</a>
         </div>
     </div>
 </div>
-
-
 @endsection
 <style>
     .image {
@@ -120,9 +122,8 @@
         display: inline-block;
         width: 250px;
         height: 100px;
-        top: 400px;
-        left: 700px;
-
+        top: 420px;
+        left: 510px;
     }
 
     .yes2 {
@@ -130,8 +131,8 @@
         display: inline-block;
         width: 100px;
         height: 50px;
-        top: 320px;
-        left: 750px;
+        top: 440px;
+        left: 850px;
     }
 
     .yes3 {
@@ -139,8 +140,8 @@
         display: inline-block;
         width: 100px;
         height: 100px;
-        top: 450px;
-        right: 700px;
+        top: 330px;
+        right: 800px;
 
     }
 
@@ -152,22 +153,21 @@
         width: 100%;
     }
 
-    .next-content {
-        animation: fadeUp 1s ease 0.2s 1 normal forwards;
-        opacity: 0;
+    .no1 {
+        position: absolute;
+        display: inline-block;
+        width: 70px;
+        height: 80px;
+        top: 320px;
+        right: 575px;
     }
 
-    @keyframes fadeUp {
-        0% {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(150px);
-        }
-        100% {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0) scale(1);
-        }
+    .no-modal {
+        display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 </style>
 
@@ -189,6 +189,12 @@
             $(this).remove();
             $('.modal3').fadeIn();
             $('img.yes3').show();
+            return false;
+        });
+
+        $('a.no1').on('click', function() {
+            $(this).remove();
+            $('.modal4').fadeIn();
             return false;
         });
 

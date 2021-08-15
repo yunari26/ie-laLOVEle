@@ -37,7 +37,7 @@ div {
 }
 
 .modal__content {
-    width: 90%;
+    width: 60%;
     height: 70%;
     background: #fff;
     top: 50%;
@@ -56,6 +56,7 @@ div {
 .modal__content h2 {
     font-size: 60px;
     color: #FFC400;
+    white-space: nowrap;
 }
 
 .no-modal .modal__content h2 {
@@ -72,7 +73,7 @@ div {
 .modal-inner {
     display: flex;
     align-items: center;
-    margin: 20px 30px;
+    margin: 0 30px;
     height: 100%;
 }
 
@@ -96,7 +97,7 @@ div {
     margin: 0 60px;
 }
 .modal-image img {
-    width: 100%;
+    width: 300px;
 }
 
 .js-modal-close {
@@ -125,4 +126,22 @@ div {
 .success {
     font-size: 50px !important;
     padding-left:100px;
+}
+
+.next-content {
+    animation: fadeUp 1s ease 0.2s 1 normal forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+    }
 }

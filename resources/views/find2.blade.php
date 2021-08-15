@@ -14,27 +14,59 @@
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト</p>
-        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>完全に日和っちゃってますね。<br>
+                    これには東京卍会の総長も呆れています。<br>
+                    「お盆deハッカソン2日しかないからって日和ってるやついる!?」</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban-hiyori.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close-yes btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
 <div class="yes-modal modal2">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト2</p>
-        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼</h2>
+                <p>輪投げなのにフリスビー置いちゃってますね。<br>
+                    これは誰がやっても0点です。悪質です。</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban-frisbee.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close-yes btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
 <div class="yes-modal modal3">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト3</p>
-        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼</h2>
+                <p>段ボールで作られた屋台に、輪投げ、、、<br>
+                    ネットでの収入が途絶えてしまったのでしょうか。<br>
+                    見る人が見ればホームレスだと勘違いしてもおかしくありません。</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban-daigo.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close-yes btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
@@ -53,17 +85,15 @@
     <div class="modal__content">
         <div class="modal-inner">
             <div class="modal-text">
-                <h2>︎</h2>
-                <h2>Congratulations!!︎</h2>
-                <h2>摘発成功!!︎</h2>
-                <h2>by YTY</h2>
+                <h2 class="congratus next-content">Congratulations!!︎</h2>
+                <h2 class="success">摘発成功!!︎</h2>
             </div>
             <div class="modal-image">
                 <img src="images/toriosae.png">
             </div>
         </div>
         <div class="right">
-            <a class="js-modal-close btn" href="{{ url('/select?page=2') }}">再挑戦する!!</a>
+            <a class="js-modal-close btn" href="{{ url('/select?page=1') }}">次の屋台へ</a>
         </div>
     </div>
 </div>
@@ -79,7 +109,7 @@
         width: 100px;
         height: 100px;
         top: 450px;
-        left: 600px;
+        left: 400px;
 
     }
 
@@ -88,8 +118,8 @@
         display: inline-block;
         width: 120px;
         height: 50px;
-        top: 500px;
-        left: 820px;
+        top: 490px;
+        left: 600px;
     }
 
     .yes3 {
@@ -97,8 +127,8 @@
         display: inline-block;
         width: 120px;
         height: 200px;
-        top: 300px;
-        right: 700px;
+        top: 310px;
+        right: 460px;
 
     }
 
