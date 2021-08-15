@@ -2,7 +2,8 @@
 
 @extends('layouts.app')
 @section('content')
-<div class="center mgn_top200">
+<div class="yatai mgn_top200">
+    <div class="yatai-inner">
     <img class="image" src="images\omenya.png">
     <a href="javascript:void(0)" class="yes1 yes"></a>
     <img class="yes1" src="images\mark_maru.png" style="display:none;">
@@ -10,6 +11,7 @@
     <img class="yes2" src="images\mark_maru.png" style="display:none;">
     <a href="javascript:void(0)" class="yes3 yes"></a>
     <img class="yes3" src="images\mark_maru.png" style="display:none;">
+    </div>
 </div>
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
@@ -111,18 +113,13 @@
 
 @endsection
 <style>
-    .image {
-        position: relative;
-    }
-
     .yes1 {
         position: absolute;
         display: inline-block;
         width: 250px;
         height: 100px;
-        top: 400px;
-        left: 700px;
-
+        top: 200px;
+        left: 40px;
     }
 
     .yes2 {
@@ -130,8 +127,8 @@
         display: inline-block;
         width: 100px;
         height: 50px;
-        top: 320px;
-        left: 750px;
+        top: 130px;
+        left: 64px;
     }
 
     .yes3 {
@@ -139,8 +136,8 @@
         display: inline-block;
         width: 100px;
         height: 100px;
-        top: 450px;
-        right: 700px;
+        top: 210px;
+        right: 20px;
 
     }
 
