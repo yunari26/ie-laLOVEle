@@ -21,9 +21,10 @@ class HomeController extends Controller
     /**
      * ３つの屋台から選ぶ
      */
-    public function select()
+    public function select(Request $request)
     {
-        return view('select');
+        $pageNum = $request->page;
+        return view('select' . $pageNum);
     }
 
     /**
@@ -53,7 +54,7 @@ class HomeController extends Controller
         return view('false');
     }
 
-/**
+    /**
      * エンディング
      */
     public function ending()
@@ -61,7 +62,7 @@ class HomeController extends Controller
         return view('ending');
     }
 
-/**
+    /**
      * エンディング
      */
     public function member()
@@ -69,7 +70,7 @@ class HomeController extends Controller
         return view('member');
     }
 
-/**
+    /**
      * エンディング
      */
     public function thanks()

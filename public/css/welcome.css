@@ -19,6 +19,7 @@ div {
 
 .right {
     text-align: right;
+}
 
 .mgn_top100 {
     margin-top: 100px;
@@ -67,17 +68,21 @@ div {
     font-size: 25px;
     color: #000000;
 }
+
 .modal-inner {
     display: flex;
     margin: 20px 30px;
 }
+
 .modal-text {
     margin: 20px;
-    width:100%;
+    width: 100%;
 }
+
 .modal-text h2 {
     margin: 0 30px 30px 0
 }
+
 .modal-image {
     width: 400px;
     height: 400px;
