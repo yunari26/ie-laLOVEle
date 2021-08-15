@@ -32,7 +32,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 15% 10%;
+        padding: 20% 10%;
         left: 0;
         right: 0;
         opacity: 0;
