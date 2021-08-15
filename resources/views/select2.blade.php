@@ -10,7 +10,6 @@
     <div class="down">
         <div class="left">
             <img src="images/wanage2.png" class="image" id="image2">
-            ≈
         </div>
         <div class="right">
             <a href="{{ url('find?shop=3') }}">

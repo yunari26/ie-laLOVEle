@@ -37,14 +37,28 @@
     </div>
 </div>
 
+{{-- 摘発成功--}}
 <div class="yes-modal success">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発成功‼︎</h2>
-        <p>テキストテキストテキストテキスト3</p>
-        <a class="js-modal-close" href="{{ route('select') }}">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>︎</h2>
+                <h2>Congratulations!!︎</h2>
+                <h2>摘発成功!!︎</h2>
+                <h2>by YTY</h2>
+            </div>
+            <div class="modal-image">
+                <img src="images/toriosae.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="{{ url('/ending') }}">再挑戦する!!</a>
+        </div>
     </div>
 </div>
+
+
 @endsection
 <style>
     .image {
