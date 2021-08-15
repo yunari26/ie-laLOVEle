@@ -13,27 +13,59 @@
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト</p>
-        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>おおっと、国民的女優ガッキーの不倫です。<br>
+                    見つけてしまいました、、、今世紀1番のお手柄といっても過言ではないかもしれません、、。</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban-affair.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close-yes btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
 <div class="yes-modal modal2">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト2</p>
-        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>大胆にも商品である金魚を食用にしていますね。<br>
+                    これは見逃せません。<br>
+                    猫かな?猫なのかな??</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban-eating.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close-yes btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
 <div class="yes-modal modal3">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
-        <h2>摘発‼︎</h2>
-        <p>テキストテキストテキストテキスト3</p>
-        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>本日8/15は終戦記念日であるにも関わらず、争っています。<br>
+                    争いからは悲劇しか生まれません。<br>
+                    平和に行きましょう。</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/ban-struggle.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close-yes btn" href="">次へ</a>
+        </div>
     </div>
 </div>
 
@@ -43,21 +75,18 @@
     <div class="modal__content">
         <div class="modal-inner">
             <div class="modal-text">
-                <h2>︎</h2>
-                <h2>Congratulations!!︎</h2>
-                <h2>摘発成功!!︎</h2>
-                <h2>by YTY</h2>
+                <h2 class="congratus next-content">Congratulations!!︎</h2>
+                <h2 class="success">摘発成功!!︎</h2>
             </div>
             <div class="modal-image">
                 <img src="images/toriosae.png">
             </div>
         </div>
         <div class="right">
-            <a class="js-modal-close btn" href="{{ url('/ending') }}">再挑戦する!!</a>
+            <a class="js-modal-close btn" href="{{ url('ending') }}">次へ</a>
         </div>
     </div>
 </div>
-
 
 @endsection
 <style>
@@ -70,8 +99,8 @@
         display: inline-block;
         width: 250px;
         height: 370px;
-        top: 400px;
-        left: 480px;
+        top: 360px;
+        left: 280px;
     }
 
     .yes2 {
@@ -79,8 +108,8 @@
         display: inline-block;
         width: 120px;
         height: 150px;
-        top: 500px;
-        left: 900px;
+        top: 360px;
+        left: 830px;
     }
 
     .yes3 {
@@ -88,8 +117,8 @@
         display: inline-block;
         width: 200px;
         height: 300px;
-        top: 300px;
-        left: 1000px;
+        top: 480px;
+        left: 670px;
     }
 
     .yes-modal {
