@@ -17,7 +17,7 @@
                 <p>テキストテキストテキストテキスト</p>
             </div>
             <div class="modal-image">
-                <img src="images/ban_daigo.png">
+                <img src="images/.png">
             </div>
         </div>
         <div class="right">
@@ -35,7 +35,7 @@
                 <p>テキストテキストテキストテキスト</p>
             </div>
             <div class="modal-image">
-                <img src="images/ban_daigo.png">
+                <img src="images/.png">
             </div>
         </div>
         <div class="right">
@@ -44,23 +44,23 @@
     </div>
 </div>
 
-{{--<div class="yes-modal modal3">--}}
-{{--    <div class="modal__bg js-modal-close"></div>--}}
-{{--    <div class="modal__content">--}}
-{{--        <div class="modal-inner">--}}
-{{--            <div class="modal-text">--}}
-{{--                <h2>摘発‼︎</h2>--}}
-{{--                <p>テキストテキストテキストテキスト</p>--}}
-{{--            </div>--}}
-{{--            <div class="modal-image">--}}
-{{--                <img src="images/ban_daigo.png">--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="right">--}}
-{{--            <a class="js-modal-close btn" href="">次へ</a>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
+<div class="yes-modal modal3">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>摘発‼︎</h2>
+                <p>テキストテキストテキストテキスト</p>
+            </div>
+            <div class="modal-image">
+                <img src="images/.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="">次へ</a>
+        </div>
+    </div>
+</div>
 
 {{--摘発失敗--}}
 {{--<div class="no-modal modal3">--}}
@@ -84,27 +84,23 @@
 {{--</div>--}}
 
 {{-- 摘発成功--}}
-<div class="yes-modal modal3">
-    <div class="modal__bg js-modal-close"></div>
-    <div class="modal__content">
-        <div class="modal-inner">
-            <div class="modal-text">
-                <h2>︎</h2>
-                <h2>Congratulations!!︎</h2>
-                <h2>摘発成功!!︎</h2>
-                <h2>by YTY</h2>
-            </div>
-            <div class="modal-image">
-                <img src="images/toriosae.png">
-            </div>
-        </div>
-        <div class="right">
-            <a class="js-modal-close btn" href="">再挑戦する!!</a>
-        </div>
-    </div>
-</div>
-
-
+{{--<div class="yes-modal modal3">--}}
+{{--    <div class="modal__bg js-modal-close"></div>--}}
+{{--    <div class="modal__content">--}}
+{{--        <div class="modal-inner">--}}
+{{--            <div class="modal-text">--}}
+{{--                <h2 class="congratus next-content">Congratulations!!︎</h2>--}}
+{{--                <h2 class="success">摘発成功!!︎</h2>--}}
+{{--            </div>--}}
+{{--            <div class="modal-image">--}}
+{{--                <img src="images/toriosae.png">--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="right">--}}
+{{--            <a class="js-modal-close btn" href="">再挑戦する!!</a>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 @endsection
 <style>
     .image {
@@ -146,6 +142,24 @@
         position: fixed;
         top: 0;
         width: 100%;
+    }
+
+    .next-content {
+        animation: fadeUp 1s ease 0.2s 1 normal forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeUp {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(150px);
+        }
+        100% {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+        }
     }
 </style>
 
