@@ -1,17 +1,22 @@
+<link href="css/welcome.css" rel="stylesheet" type="text/css">
+
 @extends('layouts.app')
 @section('content')
-<div>
+<div class="center mgn_top200">
     <img class="image" src="images\wanage.png">
     <a href="javascript:void(0)" class="yes1"></a>
+    <img class="yes1" src="images\mark_maru.png" style="display:none;">
     <a href="javascript:void(0)" class="yes2"></a>
+    <img class="yes2" src="images\mark_maru.png" style="display:none;">
     <a href="javascript:void(0)" class="yes3"></a>
+    <img class="yes3" src="images\mark_maru.png" style="display:none;">
 </div>
 <div class="yes-modal modal1">
     <div class="modal__bg js-modal-close"></div>
     <div class="modal__content">
         <h2>摘発‼︎</h2>
         <p>テキストテキストテキストテキスト</p>
-        <a class="js-modal-close" href="">次へ</a>
+        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
     </div>
 </div>
 
@@ -20,7 +25,7 @@
     <div class="modal__content">
         <h2>摘発‼︎</h2>
         <p>テキストテキストテキストテキスト2</p>
-        <a class="js-modal-close" href="">次へ</a>
+        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
     </div>
 </div>
 
@@ -29,7 +34,37 @@
     <div class="modal__content">
         <h2>摘発‼︎</h2>
         <p>テキストテキストテキストテキスト3</p>
-        <a class="js-modal-close" href="">次へ</a>
+        <a class="js-modal-close-yes" href="javascript:void(0)">次へ</a>
+    </div>
+</div>
+
+<div class="yes-modal success">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <h2>摘発成功‼︎</h2>
+        <p>テキストテキストテキストテキスト3</p>
+        <a class="js-modal-close" href="{{ route('select') }}">次へ</a>
+    </div>
+</div>
+
+{{-- 摘発成功--}}
+<div class="yes-modal success">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <div class="modal-inner">
+            <div class="modal-text">
+                <h2>︎</h2>
+                <h2>Congratulations!!︎</h2>
+                <h2>摘発成功!!︎</h2>
+                <h2>by YTY</h2>
+            </div>
+            <div class="modal-image">
+                <img src="images/toriosae.png">
+            </div>
+        </div>
+        <div class="right">
+            <a class="js-modal-close btn" href="{{ url('/select?page=2') }}">再挑戦する!!</a>
+        </div>
     </div>
 </div>
 @endsection
@@ -43,8 +78,8 @@
         display: inline-block;
         width: 100px;
         height: 100px;
-        top: 250px;
-        left: 40px;
+        top: 450px;
+        left: 600px;
 
     }
 
@@ -53,8 +88,8 @@
         display: inline-block;
         width: 120px;
         height: 50px;
-        top: 300px;
-        left: 250px;
+        top: 500px;
+        left: 820px;
     }
 
     .yes3 {
@@ -62,8 +97,8 @@
         display: inline-block;
         width: 120px;
         height: 200px;
-        top: 120px;
-        left: 500px;
+        top: 300px;
+        right: 700px;
 
     }
 
@@ -95,17 +130,34 @@
 
 <script type="module">
     $(function() {
-        $('.yes1').on('click', function() {
+        $('a.yes1').on('click', function() {
+            $(this).remove();
             $('.modal1').fadeIn();
+            $('img.yes1').show();
             return false;
         });
-        $('.yes2').on('click', function() {
+        $('a.yes2').on('click', function() {
+            $(this).remove();
             $('.modal2').fadeIn();
+            $('img.yes2').show();
             return false;
         });
-        $('.yes3').on('click', function() {
+        $('a.yes3').on('click', function() {
+            $(this).remove();
             $('.modal3').fadeIn();
+            $('img.yes3').show();
             return false;
         });
-    });
+
+        var modalCnt = 0;
+        $('.js-modal-close-yes').on('click', function() {
+            $('.yes-modal').fadeOut();
+            modalCnt++;
+            if (modalCnt === 3) {
+                $('.success').fadeIn();
+                return false;
+            }
+            return false;
+        })
+    })
 </script>

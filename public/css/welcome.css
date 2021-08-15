@@ -1,9 +1,14 @@
-h1, h2, p, div{
+h1,
+h2,
+p,
+div {
     color: #eee;
 }
+
 .title {
-    font-family: "MS Pゴシック" ;
+    font-family: "MS Pゴシック";
 }
+
 .mgn0 {
     margin: 0 auto;
 }
@@ -14,6 +19,10 @@ h1, h2, p, div{
 
 .right {
     text-align: right;
+}
+
+.mgn_top100 {
+    margin-top: 100px;
 }
 
 .center {
@@ -59,12 +68,14 @@ h1, h2, p, div{
     font-size: 25px;
     color: #000000;
 }
+
 .modal-inner {
     display: flex;
     align-items: center;
     margin: 20px 30px;
     height: 100%;
 }
+
 .modal-text {
     margin: 20px;
     width:100%;
@@ -74,9 +85,11 @@ h1, h2, p, div{
     flex-direction: column;
     justify-content: center;
 }
+
 .modal-text h2 {
     margin: 0 30px 30px 0
 }
+
 .modal-image {
     display: flex;
     align-items: center;

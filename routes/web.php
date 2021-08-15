@@ -27,3 +27,7 @@ Route::get('/thanks', 'HomeController@thanks')->name('thanks');
 
 Route::get('/yes', 'HomeController@yes')->name('yes');
 Route::get('/false', 'HomeController@false')->name('false');
+
+Route::get('/ending', function () {
+    return view('ending');
+});
