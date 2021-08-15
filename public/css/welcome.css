@@ -24,7 +24,13 @@ div {
 .mgn_top100 {
     margin-top: 100px;
 }
-
+.yatai {
+    display: flex;
+    justify-content: center;
+}
+.yatai-inner {
+    position: relative;
+}
 .center {
     text-align: center;
 }

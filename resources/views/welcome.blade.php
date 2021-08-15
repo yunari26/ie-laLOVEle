@@ -57,6 +57,9 @@
                 animation: change 22s linear 10s;
                 animation-delay: 18s;
             }
+            .intro-second *, .intro-third * {
+                font-size: 20px;
+            }
             .intro-third p {
                 line-height: 3;
             }
